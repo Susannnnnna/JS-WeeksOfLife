@@ -1,0 +1,25 @@
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    max-width: 800px; /* Szerszy grid */
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.week-square {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+
+.week-square.past {
+    background-color: rgba(228, 222, 222, 0.88); /* Wyblakły czerwony */
+}
+
+.week-square.future {
+    background-color: rgba(32, 203, 32, 0.835); /* Zielony */
+}

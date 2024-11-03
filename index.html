@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <link href=" https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/cerulean/bootstrap.min.css " rel="stylesheet">
+        <!-- Bootstrap Theme Morph -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="./css/style.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weeks of life - visualization</title>
+    </head>
+
+    <body>
+        <div class="container mt-4 text-center">
+            <h1>Weeks of Life Visualization</h1>
+            
+            <!-- Date of birth input -->
+            <div class="mb-3">
+                <label class="form-label" for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob">
+            </div>
+    
+            <!-- Life expectancy input -->
+            <div class="mb-3">
+                <label class="form-label" for="lifeExpectancy">Life Expectancy (in years)</label>
+                <input type="number" class="form-control" id="lifeExpectancy" placeholder="e.g., 75">
+            </div>
+    
+            <!-- Generate button -->
+            <button type="button" class="btn btn-outline-success" onclick="generateCalendar()">Generate Calendar</button>
+    
+            <!-- Result grid -->
+            <div id="grid-container"></div>
+    
+            <!-- Life expectancy hints -->
+            <div class="card text-white bg-success mt-4 mx-auto" style="max-width: 20rem;">
+                <div class="card-header">Average Life Expectancy</div>
+                <div class="card-body">
+                    <p class="card-text">Women: approximately 81 years</p>
+                    <p class="card-text">Men: approximately 76 years</p>
+                </div>
+            </div>
+    
+            <!-- Life expectancy factors -->
+            <div class="card text-white bg-danger mt-3 mx-auto" style="max-width: 20rem;">
+                <div class="card-header">Hints</div>
+                <div class="card-body">
+                    <p class="card-text">Smoking cigarettes: -10 years</p>
+                    <p class="card-text">Smoking liquids: ???</p>
+                    <p class="card-text">Excessive alcohol consumption: -7 years</p>
+                    <p class="card-text">Drug addiction: -15 years</p>
+                    <p class="card-text">Bad diet: -4 years</p>
+                    <p class="card-text">Little sleep: -3 years</p>
+                    <p class="card-text">Excessive exposure to screens: -2 years</p>
+                    <p class="card-text">Lack of contact with nature and social isolation: -2 years</p>
+                    <p class="card-text">Neglecting health prevention: -7.5 years</p>
+                    <p class="card-text">Polluted environment: -2 years</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Link to external JavaScript file -->
+        <script src="./js/script.js"></script>
+    </body>
+        
+</html>
